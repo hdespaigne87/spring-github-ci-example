@@ -1,4 +1,4 @@
-name: First workflow
+name: CI Workflow
 
 on: [push]
 
@@ -8,5 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Build
+        run: ./gradlew build --warning-mode all
+
+      - name: Tests
+        run: ./gradlew test --warning-mode all
 
 
