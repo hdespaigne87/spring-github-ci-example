@@ -1,4 +1,4 @@
-package spring.gradle.github.pipeline.example;
+package spring.github.ci.example;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
